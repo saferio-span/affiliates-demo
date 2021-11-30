@@ -29,7 +29,7 @@ export default function Home() {
         IRS Form 1099 NEC for the 2021 Tax Year
       </title>
       <meta name="description"
-            content="IRS 1099 NEC Form is used to report Nonemployee Compensation. We support 1099 NEC Federal & State Filings for 2021 Tax Year" />
+            content={`IRS 1099 NEC Form is used to report Nonemployee Compensation. We support 1099 NEC Federal & State Filings for 2021 Tax Year`}/>
       <meta name="keywords" content="1099 NEC, 1099 NEC 2021, what is 1099 NEC, 1099 NEC Form 2021, Form 1099 NEC, IRS 1099 NEC, NEC1099, what is a 1099 NEC form, 1099 NEC form, nonemployee compensation, 1099 NEC IRS" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
 
@@ -62,7 +62,7 @@ export default function Home() {
                       <li key="Steps_to_File"><a className="nav-link scrollto" href="#steps">Steps to File</a></li>
                       <li key="State_Filing"><a className="nav-link scrollto" href="#states">State Filing</a></li>
                       <li key="contact_us"><a className="nav-link scrollto" href="#contact">Contact Us</a></li>
-                      <li key="tbs_link" className="ms-0 ms-md-3 mt-2 mt-md-0">    <a href="https://secure.taxbandits.com/User/Register/?ref=w9request" target="_blank" className="btn-primary ">Request 1099 NEC Now</a></li>
+                      <li key="tbs_link" className="ms-0 ms-md-3 mt-2 mt-md-0">    <a href="https://secure.taxbandits.com/User/Register/?ref=w9request" target="_blank" rel="noopener noreferrer" className="btn-primary ">Request 1099 NEC Now</a></li>
                   </ul>
                   <i className="bi bi-grid mobile-nav-toggle"></i>
               </nav>
@@ -80,7 +80,7 @@ export default function Home() {
                                 File Form 1099-NEC to Report Nonemployee Compensation
                                 </p>
                                 <div className="text-center mt-3 m-auto">
-                                    <a href="https://secure.taxbandits.com/User/Register/?ref=nec1099form" target="_blank" className="btn-secondary">E-file 1099-NEC Now</a>
+                                    <a href="https://secure.taxbandits.com/User/Register/?ref=nec1099form" target="_blank" rel="noopener noreferrer" className="btn-secondary">E-file 1099-NEC Now</a>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +99,7 @@ export default function Home() {
                                 <br />
                                 <p className=""><a href="https://www.taxbandits.com/1099-forms/what-is-form-1099-nec/">Click here</a> to know more about the <a href="https://www.taxbandits.com/1099-forms/what-is-form-1099-nec/">1099 NEC Form</a></p>
                                 <div className="text-center mt-3 m-auto">
-                                    <a href="https://secure.taxbandits.com/User/Register/?ref=nec1099form" target="_blank" className="btn-secondary">E-file 1099-NEC Now</a>
+                                    <a href="https://secure.taxbandits.com/User/Register/?ref=nec1099form" target="_blank" rel="noopener noreferrer" className="btn-secondary">E-file 1099-NEC Now</a>
                                 </div>
                             </div>
                         </div>
@@ -252,7 +252,7 @@ export default function Home() {
                                   <li key="3_step"><p>Review Form information</p></li>
                                   <li key="4_step"><p>Transmit Form 1099 NEC to the IRS/State.</p></li>
                                 </ol> 
-                                <p className="">Don't wait till the <a href="https://www.taxbandits.com/1099-forms/form-1099-nec-due-date/">1099 NEC due date</a> Get started with TaxBandits today and <a href="https://www.taxbandits.com/1099-forms/efile-form-1099-nec-online/">E-file 1099 NEC</a>in minutes.</p>
+                                <p className="">Don{`'`}t wait till the <a href="https://www.taxbandits.com/1099-forms/form-1099-nec-due-date/">1099 NEC due date</a> Get started with TaxBandits today and <a href="https://www.taxbandits.com/1099-forms/efile-form-1099-nec-online/">E-file 1099 NEC</a>in minutes.</p>
                                 <h3><b>CTA: </b><a href="https://www.taxbandits.com/1099-forms/form-1099-nec-changes-for-2021/">E-file 1099-NEC Now</a></h3>
                             </div>
                         </div>
@@ -349,9 +349,6 @@ export default function Home() {
                 </footer>
             </article>
         </main>
-
-
-
 
         <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i
               className="bi bi-arrow-up-short"></i></a>
