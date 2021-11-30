@@ -1,0 +1,39 @@
+@media only screen  and (min-width:1900px){#header .logo img { width: 28%;}}
+@media only screen  and (max-width:1899px){#header .logo img { width: 28%;}}
+@media only screen and (min-width:768px) and (max-width:991px){
+.md-w-45{width: 45% !important;}
+#banner h1 { margin: 0; font-size: 30px; font-weight: 700; line-height: 35px;  }
+h2{font-size: 22px;}
+h3 { font-size: 18px;}
+p{font-size: 15px;}
+.accordion-button{font-size: 15px;}
+.navbar-mobile ul {padding: 12px !important ;border-radius: 25px;}
+.set-font-16 {font-size: 15px !important; width: max-content;width: fit-content;width: -moz-fit-content;}
+.button_effect{font-size: 15px;}
+.button_effect,:hover{font-size: 15px !important;}
+#header .logo img { width: 25%;}
+}
+@media only screen and (min-width:300px) and (max-width:767px){
+.indent{display: block;padding-left: 55px;}
+.sm-w-15{width: 15% !important;} 
+.navbar a.btn-primary{width: max-content;}
+.sm-fs-15px{font-size: 15px !important;} 
+.sm-mb-n10{margin-bottom: -10px !important;}
+ul.timeline {margin-left: -20px !important;}
+h3{font-size: 16px !important;}
+.border-right{border-right: 0px;border-bottom: 1px solid #ddd;}
+.timeline li{font-size: 14px !important;}
+.py-5{padding-top: 2rem !important;padding-bottom: 2rem !important;}
+p{font-size: 14px;}
+.accordion-body { font-size: 14px; }
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {color: #000;}
+h2{font-size: 18px;}
+h3 {font-size: 16px;}
+footer p {font-size: 14px;}
+.list-points li{font-size:14px;padding-bottom:0px !important;}
+.navbar-mobile ul {padding: 12px !important ;border-radius: 25px;}
+#header .logo img {width: 45%;}
+#banner{padding: 120px 0px 45px 0 !important;background-position: 0px;}
+#banner h1 { font-size: 24px;line-height: 30px;margin-top: 15px;margin-bottom: 15px;}
+}
+@media only screen and (max-width:568px){.indent1{display: inline-block;padding-left: 55px;}}

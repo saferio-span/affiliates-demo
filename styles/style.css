@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Montserrat:wght@300&family=Raleway:wght@700&display=swap');;
+body {font-family: "Raleway", sans-serif;color: #474b50;position: relative;}
+a {color:  #009cea;}
+a:hover{ color:#ff6f80; }
+a.text-dark:hover{color: white !important;}
+.orangeText{
+    color:#ff6f80;
+}
+h1, h2, h3, h4, h5, h6, .font-primary {font-family: 'Raleway', sans-serif;}
+h3{font-size:20px;}
+.back-to-top {position: fixed;visibility: hidden;opacity: 0;right: 15px;bottom: 16px;z-index: 99999;background: #ff6f80;;;width: 40px;height: 40px;opacity:0.8;border-radius: 50%;transition: all 0.4s;}
+.btn-primary {transition:.7s ;border: 2px solid #ff6f80;background: #ff6f80;color: #FFF !important;padding: 12px 18px !important;border-radius: 50px;
+font-size: 16px;display: inline-block;font-weight: 600;font-family: 'Raleway', sans-serif;text-decoration: none;}
+.btn-primary:hover{border: 2px solid #009cea;background: #ffffff;color: #ff6f80 !important;} 
+.btn-primary:focus{border: 2px solid #009cea !important;background: #ffffff;color: #ff6f80 !important;box-shadow: 0 0 0 0 rgba(49,132,253,.5) !important;}
+.btn-secondary{transition:.7s ;border: 2px solid #009cea;background: #ffffff;color: #009cea !important;;padding: 12px 18px !important;border-radius: 50px;
+font-size: 16px;display: inline-block;font-weight: 600;font-family: 'Raleway', sans-serif;text-decoration: none;}
+.btn-secondary:hover{border: 2px solid #ff6f80;background: #ff6f80;color: #FFF !important;}
+.btn-secondary:focus{border: 2px solid #ff6f80;background: #ff6f80;color: #FFF !important;box-shadow: 0 0 0 0 rgba(49,132,253,.5) !important;}
+.back-to-top i {font-size: 24px;color: #fff;line-height: 0;}
+.back-to-top:hover {background: #009cea;;color: #fff;}
+.back-to-top.active {visibility: visible;opacity: 1;}
+#header {min-height: 75px;transition: all 0.5s;z-index: 997;transition: all 0.5s;background: #fff;
+box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);}
+.logo img{width:250px;}
+#header .logo img {padding: 0;margin: 0;width: 40%;}
+.navbar {padding: 0;}
+.navbar ul { margin: 0; padding: 0; display: flex; list-style: none;align-items: center;}
+.navbar li {position: relative;}
+.navbar a { display: flex; align-items: center;justify-content: space-between;font-size: 15px;font-weight:600;color: #4e4039;white-space: nowrap;transition: 0.3s;}
+.navbar a i {font-size: 12px; line-height: 0; margin-left: 5px; }
+.navbar li:hover > a {color:#ff6f80 ;}
+.navbar .active{color: #009cea;;background: #eee;border-radius: 50px;}
+.mobile-nav-toggle {color: #7a6960;font-size: 28px;cursor: pointer;display: none;line-height: 0;transition: 0.5s;}
+.mobile-nav-toggle.bi-x {color: #fff;}
+ @media (max-width: 991px) {.mobile-nav-toggle { display: block;}.navbar ul { display: none;}} 
+.navbar-mobile { position: fixed; overflow: hidden; top: 0; right: 0; left: 0; bottom: 0; background: rgba(78, 64, 57, 0.9);transition: 0.3s;}
+ .navbar-mobile .mobile-nav-toggle {position: absolute;top: 15px;right: 15px;}
+.navbar-mobile ul {display: block;position: absolute;top: 55px;right: 15px;left: 15px;padding: 12px 0;background-color: #fff;overflow-y: auto;transition: 0.3s;}
+.navbar-mobile a {padding: 10px 20px;font-size: 15px;color: #7a6960;}
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {color: #3e2ecd;}
+#penalties,#banner {width: 100%;padding: 160px 0px 80px 0 !important;
+background-size: cover;background: linear-gradient(to right, rgb(255, 255, 255), rgb(249, 168, 177));}
+#changes {width: 100%;padding: 160px 0px 80px 0 !important;
+background-size: cover;background: linear-gradient(to left, rgb(255, 255, 255), rgb(117, 225, 255));}
+#banner h1 {margin: 0;font-size: 36px;font-weight: 700;line-height: 46px;}
+@-webkit-keyframes up-down {0% {transform: translateY(10px);}100% {transform: translateY(-10px);}}
+@keyframes up-down {0% {transform: translateY(10px);}100% {transform: translateY(-10px);}}
+.bg-dark-blue {background: linear-gradient(to left, #009cea, rgb(123, 174, 233)); }
+footer p{font-size: 14px;line-height: 24px;}
+footer a{text-decoration:none;color:#fff;}
+footer a:hover { color: #ff6f80;;; }
+.text-muted {color: #b7bdc1 !important;}
+h2{font-weight: bold !important;}
+.bg-pink { background: #fffbfc;}
+.text-blue { color: #009cea !important; }
+.img-border{box-shadow: 0px 0px 30px #00000080;border: 3px solid #FFF;}
+.bg-img-1 {background: url(/images/pattern1.png)no-repeat;background-position-x: 0%;background-position-y: 0%;background-attachment: scroll;background-size: auto;background-size: cover;position: relative;background-position: center}
+.bg-img-2 {background: url(/images/bg2.jpg)no-repeat;background-attachment: fixed;background-position: center;}
+.list-points {padding-left: 40px;margin: 0px;}
+.list-points li {list-style: none;text-align: left;font-size: 16px;padding-left: 10px;}
+.list-points li::before {content: ""; position: absolute !important;top: 8px !important;left: -20px !important;width: 32px;height: 20px;background: url("/images/tick.png") no-repeat center center !important;border: 0px solid black !important;}
+ ul.timeline {list-style-type: none;position: relative;} 
+ul.timeline::before {content: ' ';background: #fbc7cd;;display: inline-block;position: absolute;left: 40px;width: 2px;height: 100%;top: 10px;}
+ul.timeline > li {margin: 15px 0;padding-left: 30px;position: relative;}
+ul.timeline li::before{content: ' ';background: #009cea;display: inline-block;position: absolute;border-radius: 50%;
+border: 3px dotted #009cea;;top: 3px;left: -2px;width: 20px;height: 20px;z-index: 400;}
+.timeline li span{color:#ff6f80;;;}
+.card{box-shadow: 0 10px 24px 0 rgba(68, 88, 144, 0.1);transition: all 0.3s ease-in-out;border-radius:20px ;}
+.card img {width: 50px;}
+.card:hover {transform: translateY(-7px);box-shadow: 9px 9px 5px 0px #ddd;background-color: white !important;}
+.bg-dull-blue{background-color: #eef5fa !important;}
+.border-pink-3px{border-left: 3px solid #ff6f80;}
+.line {width: 100px;background: linear-gradient(to right, #009cea, #ff6f80);height: 3px !important;opacity: 100% !important;}
+.line-white{width: 100px;background-color:  #fff;height: 3px !important;opacity: 100% !important;}
+.fa{color: #ff6f80;cursor: pointer;}
+.fa:hover{color: #009cea;}
+.border-right{border-right: 1px solid #ddd;}
+
+
