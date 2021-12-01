@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       <Head>
-      <meta charset="utf-8" />
+      <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>
         IRS Form 1099 NEC for the 2021 Tax Year
@@ -36,8 +36,9 @@ export default function Home() {
         {/* Bootstrap CSS  */}
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-              integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossOrigin="anonymous"/>
+        {/* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossOrigin="anonymous"/> */}
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
               rel="stylesheet"/>
         <link href="/images/fav.png" rel="icon"/>
@@ -49,23 +50,27 @@ export default function Home() {
       <body>
         <header id="header" className="fixed-top ">
           <div className="container align-items-right">
-              <nav id="navbar" className="navbar">
-                  <div className="logo">
-                      <a href="index.html"><Image src="/images/logo.png" alt="w9request" className="img-fluid" width={183} height={65} /></a>
-                  </div>
-                  
-                  <ul>
-                      <li key="Home"><a className="nav-link scrollto active" href="#banner">Home</a></li>
-                      <li key="Form_1099_NEC"><a className="nav-link scrollto" href="#form1099Nec">Form 1099 NEC</a></li>
-                      <li key="Changes_for_2021"><a className="nav-link scrollto" href="#changes">Changes for 2021</a></li>
-                      <li key="Deadlines"><a className="nav-link scrollto" href="#deadlines">Deadlines</a></li>
-                      <li key="Steps_to_File"><a className="nav-link scrollto" href="#steps">Steps to File</a></li>
-                      <li key="State_Filing"><a className="nav-link scrollto" href="#states">State Filing</a></li>
-                      <li key="contact_us"><a className="nav-link scrollto" href="#contact">Contact Us</a></li>
-                      <li key="tbs_link" className="ms-0 ms-md-3 mt-2 mt-md-0">    <a href="https://secure.taxbandits.com/User/Register/?ref=w9request" target="_blank" rel="noopener noreferrer" className="btn-primary ">Request 1099 NEC Now</a></li>
-                  </ul>
-                  <i className="bi bi-grid mobile-nav-toggle"></i>
-              </nav>
+            <nav className="navbar navbar-expand-lg navbar-light ">
+                <a className="navbar-brand" href="index.html"><Image src="/images/logo.png" alt="w9request" className="img-fluid" width={183} height={65} /></a>
+                <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon "></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+                    <li key="Home"><a className="nav-link scrollto dropdown-item" href="#banner">Home</a></li>
+                        <li key="Form_1099_NEC"><a className="nav-link scrollto dropdown-item" href="#form1099Nec">Form 1099 NEC</a></li>
+                        <li key="Changes_for_2021"><a className="nav-link scrollto dropdown-item" href="#changes">Changes for 2021</a></li>
+                        <li key="Deadlines"><a className="nav-link scrollto dropdown-item" href="#deadlines">Deadlines</a></li>
+                        <li key="Steps_to_File"><a className="nav-link scrollto dropdown-item" href="#steps">Steps to File</a></li>
+                        <li key="State_Filing"><a className="nav-link scrollto dropdown-item" href="#states">State Filing</a></li>
+                        <li key="contact_us"><a className="nav-link scrollto dropdown-item" href="#contact">Contact Us</a></li>
+                        {/* <li key="tbs_link" className="ms-0 ms-md-3 mt-2 mt-md-0 dropdown-item"><a href="https://secure.taxbandits.com/User/Register/?ref=w9request" target="_blank" rel="noopener noreferrer" className="btn-primary ">Request 1099 NEC Now</a></li> */}
+                    </ul>
+                    <div className="d-flex justify-content-center">
+                        <a href="https://secure.taxbandits.com/User/Register/?ref=w9request" target="_blank" rel="noopener noreferrer" className="btn-primary ">Request 1099 NEC Now</a>
+                    </div>
+                </div>
+            </nav>
           </div>
         </header>
         <main id="main">
@@ -361,11 +366,13 @@ export default function Home() {
             <Script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></Script>
             <Script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></Script>
             <Script src="https://www.941reporting.com/js/jquery.exitintent.js"></Script>
-            <Script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+            {/* <Script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
               integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
-              crossOrigin="anonymous"></Script>
+              crossOrigin="anonymous"></Script> */}
             <Script src="js/jquery.exitintent.js"></Script>
-            <Script src="../bs/js/bootstrap.bundle.min.js"></Script>
+            <Script src="js/jquery.min.js"></Script>
+            {/* <Script src="../bs/js/bootstrap.bundle.min.js"></Script> */}
+            <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></Script>
             <Script src="../js/main.js"></Script>
             <Script src="../js/common.js"></Script>
         </>
